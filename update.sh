@@ -10,7 +10,7 @@ repos=(
 )
 
 # Directory to clone repositories into
-base_dir="/path/to/your/directory"
+base_dir="../"
 
 # Iterate over the repositories and pull updates
 for repo in "${repos[@]}"; do
