@@ -6,6 +6,7 @@ repos=(
     "git@github.com:senior-project-it/RMS-api.git"
     "git@github.com:senior-project-it/RMS-client.git"
     "git@github.com:senior-project-it/RMS-compose.git"
+    "git@github.com:senior-project-it/RMS-scripts.git"
 )
 
 # Directory to clone repositories into
