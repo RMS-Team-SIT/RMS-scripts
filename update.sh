@@ -20,9 +20,11 @@ for repo in "${repos[@]}"; do
     # Check if the repository already exists, if not, clone it
     if [ ! -d "$base_dir/$repo_name" ]; then
         git clone "$repo" "$base_dir/$repo_name"
+        echo "Cloned repository: $repo_name"
     else
         # If the repository exists, pull updates
         cd "$base_dir/$repo_name" || exit
+        echo "Updating repository: $repo_name"
         git pull
         cd - || exit
     fi
